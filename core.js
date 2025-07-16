@@ -53,7 +53,7 @@ output = document.querySelector("#output")
 
 logo.addEventListener("click", () => {
 
-    output.innerText= "clciked !"
+    // output.innerText= "clicked !"
 
     if (money.value < 0) {
         output.innerText = "Enter a Valid Number"
@@ -68,7 +68,7 @@ logo.addEventListener("click", () => {
         }, 200)
         // console.log("u entered = ",money.value)
         async function convert() {
-            let response = await fetch(`https://open.er-api.com/v6/latest/${value_f}`);
+            let response = await fetch(`https://api.exchangerate.host/latest?base=${value_f}`);
             let data = await response.json();
             let rate = data.rates[value_t];
             output.innerText = Math.round(rate * (money.value) * 100) / 100
