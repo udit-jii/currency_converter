@@ -53,6 +53,8 @@ output = document.querySelector("#output")
 
 logo.addEventListener("click", () => {
 
+    output.innerText= "clciked !"
+
     if (money.value < 0) {
         output.innerText = "Enter a Valid Number"
     }
