@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <form action="#" class="form">
+        <p id="heading">Currency Converter</p>
+        <input type="number" placeholder="Enter Amount" id="amount" min="0">
+        <div class="fromto">
+            <div class="from">
+                <p class="wfrom">From</p>
+                <div class="fbox">
+                    <img src="https://flagsapi.com/US/flat/64.png" alt="img" id="img1">
+                    <select name="from_country" id="fcountry">
+                        <option value="USD">USD</option>
+                    </select>
+                </div>  
+            </div>
+            <i class="fa-solid fa-arrow-right-arrow-left" id="exchange"></i>
+            <div class="to">
+                <p class="wto">To</p>
+                <div class="tbox">
+                    <img src="https://flagsapi.com/IN/flat/64.png" alt="img" id="img2">
+                    <select name="to_country" id="tcountry">
+                        <option value="INR">INR</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="output">
+            <p id="output"></p>
+        </div>
+        <i class="fa-solid fa-money-bill-transfer" id="sign"></i>
+    </form>
+    <script src="codes.js"></script>
+    <script src="core.js"></script>
+</body>
+
+</html>

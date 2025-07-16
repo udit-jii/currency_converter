@@ -1,0 +1,109 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color:#0B132B;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign{
+
+    font-size: 40px;
+    /* background-color: aqua; */
+    cursor:pointer;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    color: #fac748;
+    position:relative;
+    top:20px;
+}
+
+.form{
+    background-color: white;
+    height:350px;
+    width:310px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding:5px;
+}
+
+#heading{
+    margin:15px 0 30px;
+    font-size: 25px;
+    word-spacing: 0.01px;
+    font-weight: 600;
+    color:#0B132B;
+}
+
+#amount{
+    width:270px;
+    height:35px;
+    border-radius: 7px;
+    /* outline:2px solid #00635d; */
+    padding-left: 5px;
+    border-color: grey;
+}
+
+.fromto{
+    display:flex;
+    /* background-color: #00635d; */
+    height:70px;
+    width:270px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 5px;
+    padding:5px;
+}
+
+#fcountry,#tcountry{
+    height:30px;
+    position: relative;
+    top:5px;
+    outline:transparent;
+    border: transparent;
+    height: 30px;
+    padding-right:10px;
+}
+
+.wto{
+    position: relative;
+    left: 5px;
+}
+
+.fbox,.tbox{
+    display: flex;
+    /* flex-direction: column; */
+    /* background-color: #00635d; */
+    outline: 2px solid grey;
+    border-radius: 5px;
+}
+
+.output{
+    outline: 2px solid grey;
+    border-radius: 7px;
+    width:190px;
+    height:35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:17px;
+}
+
+#exchange{
+    font-size: 20px;
+    position: relative;
+    top:10px;
+}
+
+#img1,#img2{
+    height:40px;
+}
